@@ -18,7 +18,7 @@ const {name,email}=useSelector(state=>state);
 
   return (
     <div>
-        <h2>User Information</h2>
+        <h1>User Information</h1>
         <form>
           <label>Name:
             <input type="text" value={name} onChange={handleName}/>
@@ -29,8 +29,10 @@ const {name,email}=useSelector(state=>state);
           </label>
         </form>
         <h3>Current values in store:</h3>
+        <div className="output">
         <p>Name-{name}</p>
         <p>Email-{email}</p>
+        </div>
     </div>
   )
 }
