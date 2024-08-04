@@ -30,8 +30,8 @@ const {name,email}=useSelector(state=>state);
         </form>
         <h3>Current values in store:</h3>
         <div className="output">
-        <p>Name-{name}</p>
-        <p>Email-{email}</p>
+        <p>Name - {name}</p>
+        <p>Email - {email}</p>
         </div>
     </div>
   )
